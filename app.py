@@ -396,6 +396,69 @@ def main():
         "or view combined team stats. Data comes from "
         "**Stevens Bowling Stats Seasonal.xlsx**."
     )
+    # --- Branding header with hover images ---
+    st.markdown(
+        """
+        <style>
+        .branding-bar {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+            color: #888;
+        }
+        .brand-wrapper {
+            position: relative;
+            display: inline-block;
+            margin: 0 0.25rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: #ccc;
+        }
+        .brand-wrapper:hover {
+            color: #fff;
+        }
+        .brand-tooltip {
+            display: none;
+            position: absolute;
+            top: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #111;
+            border-radius: 8px;
+            padding: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+            z-index: 9999;
+        }
+        .brand-tooltip img {
+            max-width: 180px;
+            max-height: 120px;
+            display: block;
+        }
+        .brand-wrapper:hover .brand-tooltip {
+            display: block;
+        }
+        </style>
+
+        <div class="branding-bar">
+        Powered by
+        <span class="brand-wrapper">
+            Jordo Laboratories
+            <span class="brand-tooltip">
+            <img src="https://via.placeholder.com/180x120.png?text=Jordo+Labs" alt="Jordo Laboratories">
+            </span>
+        </span>
+        and built by
+        <span class="brand-wrapper">
+            CJ Technologies
+            <span class="brand-tooltip">
+            <img src="https://via.placeholder.com/180x120.png?text=CJ+Tech" alt="CJ Technologies">
+            </span>
+        </span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 
     # Load data
     try:
