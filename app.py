@@ -444,14 +444,14 @@ def main():
         <span class="brand-wrapper">
             Jordo Laboratories
             <span class="brand-tooltip">
-            <img src="https://via.placeholder.com/180x120.png?text=Jordo+Labs" alt="Jordo Laboratories">
+            <img src="https://github.com/cfolgore/bowling-stats/blob/e8f82705bc681be57a8e1e171164ed19c8c72823/images/JordoLabs.png" alt="Jordo Laboratories">
             </span>
         </span>
         and built by
         <span class="brand-wrapper">
             CJ Technologies
             <span class="brand-tooltip">
-            <img src="https://via.placeholder.com/180x120.png?text=CJ+Tech" alt="CJ Technologies">
+            <img src="https://github.com/cfolgore/bowling-stats/blob/e8f82705bc681be57a8e1e171164ed19c8c72823/images/JordoLabs.png" alt="CJ Technologies">
             </span>
         </span>
         </div>
