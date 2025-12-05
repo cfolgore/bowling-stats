@@ -430,8 +430,8 @@ def main():
             z-index: 9999;
         }
         .brand-tooltip img {
-            max-width: 180px;
-            max-height: 120px;
+            max-width: 400px;
+            max-height: 400px;
             display: block;
         }
         .brand-wrapper:hover .brand-tooltip {
