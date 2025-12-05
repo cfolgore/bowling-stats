@@ -487,6 +487,72 @@ def main():
         step=1,
     )
 
+
+        # 🚫 CJ Jordan Proshop Paywall 🚫
+    if selected_player.lower() == "jordan":
+        st.markdown(
+            """
+            <style>
+            .paywall-box {
+                margin-top: 2rem;
+                padding: 2rem;
+                border-radius: 16px;
+                border: 4px solid #ff00ff;
+                background: linear-gradient(135deg, #ff007f, #ffdd00);
+                box-shadow: 0 0 25px rgba(255,0,255,0.8);
+                text-align: center;
+                animation: wobble 1.2s infinite alternate;
+            }
+            .paywall-title {
+                font-size: 2.2rem;
+                font-weight: 900;
+                color: #000;
+                text-shadow: 2px 2px #fff;
+                margin-bottom: 1rem;
+            }
+            .paywall-text {
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #111;
+            }
+            .paywall-highlight {
+                font-size: 1.4rem;
+                color: #b00000;
+                text-shadow: 1px 1px #fff;
+            }
+            @keyframes wobble {
+                0%   { transform: rotate(-1deg) scale(1.01); }
+                100% { transform: rotate(1deg)  scale(1.03); }
+            }
+            </style>
+
+            <div class="paywall-box">
+                <div class="paywall-title">
+                    🔒 CJ JORDAN PROSHOP EXCLUSIVE CONTENT 🔒
+                </div>
+                <div class="paywall-text">
+                    These stats are locked behind a
+                    <span class="paywall-highlight">
+                        CJ Jordan Proshop sponsored paywall!
+                    </span>
+                </div>
+                <br/>
+                <div class="paywall-text">
+                    Please send <span class="paywall-highlight">$50</span> to unlock:
+                    <br/><br/>
+                    Venmo: <span class="paywall-highlight">@cjbowl300</span><br/>
+                    Zelle: <span class="paywall-highlight">732-637-2210</span>
+                </div>
+                <br/>
+                <div class="paywall-text">
+                    💰 No pay, no Jordan Ela stats. 💰
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        return
+
     # Grab the selected player's rows
     overall_row = overall_df[overall_df["name"] == selected_player]
     spare_row = spares_df[spares_df["name"] == selected_player]
